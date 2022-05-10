@@ -27,7 +27,7 @@ const Banner = () => {
         <Slider {...settings}>
           {banners.map(item => {
             <SliderSection key={v4()}
-              className={item.className}
+            classData={item.classData}
               title={item.title}
               description={item.description}
             />
