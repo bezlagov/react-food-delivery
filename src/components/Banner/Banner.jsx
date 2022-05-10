@@ -19,8 +19,6 @@ const Banner = () => {
     arrows: false,
   };
 
-  console.log(banners);
-
   return (
     <div className='container-promo swiper'>
       <div className='swiper-wrapper'>
