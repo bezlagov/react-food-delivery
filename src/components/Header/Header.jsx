@@ -1,4 +1,6 @@
 import React from 'react';
+import buttons from '../../utils/buttonsData';
+import HeaderButton from './HeaderButton/HeaderButton';
 
 const Header = () => {
   const logo = require("../../assets/img/icon/logo.svg").default;
@@ -16,21 +18,9 @@ const Header = () => {
           </label>
           <div className='store-header__buttons'>
             <span className='store-header__user-name'>Login</span>
-
-            <button className='button button-primary button-auth' onClick={null}>
-              <span className='button-auth-svg'></span>
-              <span className='button-text'>Log In</span>
-            </button>
-
-            <button className='button button-cart button-auth' onClick={null}>
-              <span className='button-cart-svg'></span>
-              <span className='button-text'>Cart</span>
-            </button>
-
-            <button className='button button-cart button-out' onClick={null}>
-              <span className='button-out-svg'></span>
-              <span className='button-text'>Sign Out</span>
-            </button>
+            <HeaderButton {...buttons[0]} />
+            <HeaderButton {...buttons[1]} />
+            <HeaderButton {...buttons[2]} />
           </div>
         </div>
       </div>
