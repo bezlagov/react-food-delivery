@@ -25,13 +25,7 @@ const Banner = () => {
     <div className='container-promo swiper'>
       <div className='swiper-wrapper'>
         <Slider {...settings}>
-          {banners.map(item => {
-            <SliderSection key={v4()}
-            classData={item.classData}
-              title={item.title}
-              description={item.description}
-            />
-          })}
+          {banners.map(item => <SliderSection key={v4()} {...item} />)}
         </Slider>
       </div>
     </div>
